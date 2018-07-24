@@ -1,0 +1,23 @@
+.Calendar {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Calendar > div:first-child {
+    background: teal;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Calendar > div:not(:first-child) {
+    width: calc(100%/7);
+    height: 40px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.Calendar .selected {
+    background: gold;
+}

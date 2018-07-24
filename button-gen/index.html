@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Button Generator</h1>
+        <a href='../index.html'>Back to Main</a>
+        <br>
+        <script>
+            let num = 0;
+            setInterval(() =>{
+                let btn = document.createElement('button');
+                btn.innerText = ++num;
+                document.body.appendChild(btn);
+                if (num == 30){
+                    clearInterval(id);
+                }
+            }, 100)
+        </script>
+    </body>
+</html>
